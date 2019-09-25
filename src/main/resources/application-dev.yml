@@ -1,0 +1,53 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    username: root
+    password: a1170712462
+    url: jdbc:mysql://127.0.0.1:3306/sell?characterEncoding=utf-8&useSSl=false
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+  jackson:
+    default-property-inclusion: non_null
+  redis:
+    host: 127.0.0.1
+    port: 6379
+    password:
+server:
+  context-path: /sell
+
+#logging:
+# pattern:
+#   console: "%d - %msg%n"
+#  path: C:\Users\CXY\Desktop
+#  level:
+#    com.imooc.LOggerTest: debug
+
+wechat:
+  mpAppId:
+  mpAppSecret:
+  openAppId:
+  openAppSecret:
+  mchId:
+  mchKey:
+  KeyPath:
+  notifyUrl:
+  templateId:
+    orderStatus:
+
+projectUrl:
+  wechatMpAuthorize:
+  wechatOpenAuthorize:
+  sell: localhost:8080
+logging:
+  level:
+    com.imooc.dataobject.mapper: trace
+
+CourseUrl:
+  verifyCodeUrl: https://zjkgjw.educationgroup.cn/jxkjxy_jsxsd/verifycode.servlet
+  loginUrl: https://zjkgjw.educationgroup.cn/jxkjxy_jsxsd/
+  commitUrl: https://zjkgjw.educationgroup.cn/jxkjxy_jsxsd/xk/LoginToXk
+  verifyImgDestURL: C:\\Users\\CXY\\Desktop\\verifyCodeImg.jpg
+
+
